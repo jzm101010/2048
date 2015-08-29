@@ -1,0 +1,244 @@
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+html,body{position: relative;height: 100%;background-color: #7F81B1;overflow: hidden;}
+body{
+	z-index: -10;
+}
+/* 布局 */
+.g-hd{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 36.4%;
+	height: 350px;
+	transform: translate(-50%, -50%);
+}
+
+.g-bd{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 800px;
+	height: 800px;
+	transform: translate(-50%, -50%);
+	background: url(../img/background.png) no-repeat;
+	z-index: -5;
+}
+
+.g-ft{
+	position: absolute;
+	top: 95%;
+	left: 50%;
+	width: 800px;
+	height: 50px;
+	z-index: -5;
+	transform: translate(-50%, 0);
+}
+
+/* 模块 */
+.m-logo{
+	float: left;
+	display: none;
+	width: 90.4%;
+}
+.m-start{
+	float: right;
+	display: none;
+	width: 28.57%;
+	height: 100px;
+}
+.m-start:hover{
+	cursor: pointer;
+}
+
+.m-game{
+	position: absolute;
+	top: 0px;
+	width: 800px;
+	height: 800px;
+}
+
+.m-game div{
+	position: absolute;
+	color: #B9A9D4;
+	font-size: 7.5rem;
+	font-weight: bold;
+	line-height: 170px;
+	text-align: center;
+	font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.m-score{
+	float: left;
+	margin: 5px 0;
+	font-size: 40px;
+	line-height: 40px;
+}
+.m-score>span{
+	display: inline-block;
+}
+
+.m-restart{
+	float: right;
+	padding: 10px;
+	margin: auto 0;
+	width: 150px;
+	color: #1baf75;
+	font-size: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #3132BB;
+	border-radius: 10px;
+}
+.m-restart:hover{
+	cursor: pointer;
+}
+
+.tile0-0{
+	top: 16px;
+	left: 16px;
+}
+.tile0-1{
+	top: 16px;
+	left: 212px;
+}
+.tile0-2{
+	top: 16px;
+	left: 408px;
+}
+.tile0-3{
+	top: 16px;
+	left: 604px;
+}
+.tile1-0{
+	top: 212px;
+	left: 16px;
+}
+.tile1-1{
+	top: 212px;
+	left: 212px;
+}
+.tile1-2{
+	top: 212px;
+	left: 408px;
+}
+.tile1-3{
+	top: 212px;
+	left: 604px;
+}
+.tile2-0{
+	top: 408px;
+	left: 16px;
+}
+.tile2-1{
+	top: 408px;
+	left: 212px;
+}
+.tile2-2{
+	top: 408px;
+	left: 408px;
+}
+.tile2-3{
+	top: 408px;
+	left: 604px;
+}
+.tile3-0{
+	top: 604px;
+	left: 16px;
+}
+.tile3-1{
+	top: 604px;
+	left: 212px;
+}
+.tile3-2{
+	top: 604px;
+	left: 408px;
+}
+.tile3-3{
+	top: 604px;
+	left: 604px;
+}
+
+/* 动画  */
+@-webkit-keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+   -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
